@@ -10,5 +10,5 @@ interface IImportedObject {
 }
 
 declare class WebAssembly {
-  public static instanceStreaming<E>(response: Promise<Response>, importedObject: IImportedObject): Promise<IResultObject<E>>;
+  public static instantiateStreaming<E>(response: Promise<Response>, importedObject: IImportedObject): Promise<IResultObject<E>>;
 }
